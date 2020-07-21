@@ -130,7 +130,8 @@ $ kubectl delete -f k8s-deployment.yml
 
 == Maintainer and Author
 
-M.-Leander Reimer (@lreimer)
+Author M.-Leander Reimer (@lreimer)
+Maintainer Mano Ramakrishnan
 
 == License
 
