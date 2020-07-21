@@ -7,7 +7,7 @@ metadata:
     env: test
 spec:
   containers:
-  - image: cloud-native-go:1.0.0
+  - image: formanojr/cloud-native-go:1.0.1-alpine
     name: cloud-native-go
     ports:
     - containerPort: 8080

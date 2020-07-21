@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: extensions/v1
 kind: Deployment
 metadata:
   name: cloud-native-go
@@ -6,9 +6,6 @@ metadata:
     app: cloud-native-go
 spec:
   replicas: 2
-  selector:
-    matchLabels:
-      app: cloud-native-go
   revisionHistoryLimit: 10
   minReadySeconds: 5
   strategy:
@@ -24,12 +21,11 @@ spec:
     spec:
       containers:
       - name: cloud-native-go
-        image: "formanojr/cloud-native-go:1.0.1-alpine"
+        image: "cloud-native-go:1.0.1"
         resources:
           requests:
             memory: "64Mi"
             cpu: "125m"
-          # Limits after they are reached k8s will kill and restart these pods
           limits:
             memory: "128Mi"
             cpu: "250m"

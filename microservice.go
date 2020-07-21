@@ -1,11 +1,10 @@
 package main
 
 import (
+	"Cloud-Native-Go/api"
 	"fmt"
 	"net/http"
 	"os"
-
-	"github.com/PacktPublishing/Cloud-Native-Go/api"
 )
 
 func main() {

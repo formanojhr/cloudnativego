@@ -10,5 +10,6 @@ spec:
   type: NodePort
   ports:
   - port: 8080
+    #selector should match the labels
   selector:
     app: cloud-native-go

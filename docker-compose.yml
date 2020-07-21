@@ -10,6 +10,6 @@ services:
     nginx:
         image: "nginx:1.11.9"
         ports: 
-        - "8080:80"
+        - "8091:80"
         links: 
         - microservice
